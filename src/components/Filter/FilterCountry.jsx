@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './FilterCountry.css';
 const FilterCountry = ({onSelect}) => {
  const selectHandler = (e) => {
     const regionName = e.target.value;
@@ -7,7 +7,7 @@ const FilterCountry = ({onSelect}) => {
   };
   return (
      <select onChange={selectHandler}>
-      <option className="option">Filter by Region</option>
+      <option className="option" value='all'>Filter by Region</option>
       <option className="option" value="Africa">
         Africa
       </option>

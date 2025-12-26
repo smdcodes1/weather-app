@@ -1,0 +1,29 @@
+
+.header {
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  /* text-align: center; */
+  justify-content: space-between;
+  line-height: 70px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: hsl(209, 23%, 22%);
+  z-index: 11;
+}
+.container {
+  /* width: 1140px; */
+  padding: 0px 15px;
+  align-items: center;
+  /* margin: auto !important; */
+}
+
+.header h5 {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #fff;
+}

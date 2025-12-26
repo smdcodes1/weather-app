@@ -1,0 +1,24 @@
+
+/* Light Theme */
+:root[data-theme="light"] {
+  --bg-color: #333;
+  --text-color: #fff;
+  --card-bg: #111;
+}
+
+/* Dark Theme */
+:root[data-theme="dark"] {
+  --bg-color: #111;
+  --text-color: #000;
+  --card-bg: #fff;
+}
+
+/* Global usage */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.country__card {
+  background-color: var(--card-bg);
+}

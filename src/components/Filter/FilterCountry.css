@@ -1,0 +1,11 @@
+
+select {
+  padding: 10px 25px;
+  background: #fff;
+  margin-bottom: 50px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+}

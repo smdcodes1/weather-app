@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams,Link,useNavigate, useLocation } from 'react-router-dom';
 // import { API_URL } from '../../services/api';
-import apiClent from '../../services/api';
+import apiClent from '../../services/countryApi';
 import { fetchWeatherByCity } from '../../services/weatherApi';
 const CountryDetails = () => {
     const [country, setCountry] = useState([]);

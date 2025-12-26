@@ -1,0 +1,15 @@
+
+input {
+  padding: 10px 25px;
+  color: #000;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #000;
+}

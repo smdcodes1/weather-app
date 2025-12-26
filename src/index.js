@@ -5,13 +5,17 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter as Router} from "react-router-dom";
 import { FavProvider } from './context/FavoritesContext';
+import { Themeprovider } from './context/ThemeContext';
+import "./components/ThemeToggle/Theme.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <FavProvider>
-      <Router>
-        <App />
-      </Router>
+      <Themeprovider>
+        <Router>
+          <App />
+        </Router>
+      </Themeprovider>
     </FavProvider>
   </React.StrictMode>
 );

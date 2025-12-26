@@ -5,9 +5,12 @@ const FavContext = createContext();
 export const useFav = () => useContext(FavContext);
 
 export const FavProvider = ({ children }) => {
-    const [user,setUser]= useState(null);
+  const [favourites, setFavourites] = useState(() => {
+      const stored = localStorage.getItem("favourites");
+      return stored ? JSON.parse(stored) : [];
+  });
   return (
-    <FavContext.Provider value={{ user,setUser }}>
+    <FavContext.Provider value={{ favourites,setFavourites }}>
       {children}
     </FavContext.Provider>
   );
