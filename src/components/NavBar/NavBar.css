@@ -27,3 +27,46 @@
   font-size: 1.3rem;
   color: #fff;
 }
+.navbar-right{
+    display: flex;
+    position: relative;
+    gap: 20px;
+    align-items: center;
+    /* cursor: pointer; */
+}
+
+.navbar-profile{
+    display: flex;
+    position: relative;
+    align-items: center;
+    gap: 6px;
+    color: #fff;
+    /* cursor: pointer; */
+    /* padding-right: 110px; */
+}
+/* .navbar-profile a{
+  text-decoration: none;
+} */
+.navbar-profile .dropdown{
+    position: absolute;
+    top: 80%;
+    right: 10px;
+    width: max-content;
+    max-height: 60px;
+    background: whitesmoke;
+    color: #000;
+    padding: 0px 22px;
+    border-radius: 10px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+    
+}
+.navbar-profile .dropdown p{
+    font-size: 13px;
+    cursor: pointer;
+
+}
+.navbar-profile:hover .dropdown{
+    display: block;
+}

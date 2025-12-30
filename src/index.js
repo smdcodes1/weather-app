@@ -3,18 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { FavProvider } from './context/FavoritesContext';
 import { Themeprovider } from './context/ThemeContext';
 import "./components/ThemeToggle/Theme.css";
+import { AuthProvider } from './context/AuthContext';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <FavProvider>
       <Themeprovider>
-        <Router>
-          <App />
-        </Router>
+        <AuthProvider>
+
+          <Router>
+            <App />
+          </Router>
+
+        </AuthProvider>
       </Themeprovider>
     </FavProvider>
   </React.StrictMode>

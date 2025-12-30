@@ -1,0 +1,16 @@
+
+/* .notFound{
+  height: 0;
+  overflow: hidden;
+}
+.notFound p {
+    display: none;
+
+} */
+
+.notFound {
+  /* width: 1140px;
+  margin: auto !important; */
+  margin-top: 100px;
+  color: #fff;
+}
